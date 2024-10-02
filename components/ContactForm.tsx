@@ -88,7 +88,11 @@ export default function ContactForm() {
                   <FormControl>
                     <div className="relative">
                       <div className="absolute inset-0 bg-black translate-x-1 translate-y-1 rounded-md" />
-                      <Input placeholder="Your name" {...field} className="relative border-2 border-solid border-black bg-white" />
+                      <Input
+                        placeholder="Your name"
+                        {...field}
+                        className="relative border-2 border-solid border-black bg-white"
+                      />
                     </div>
                   </FormControl>
                   <FormMessage />
@@ -104,7 +108,11 @@ export default function ContactForm() {
                   <FormControl>
                     <div className="relative">
                       <div className="absolute inset-0 bg-black translate-x-1 translate-y-1 rounded-md" />
-                      <Input placeholder="Your email" {...field} className="relative border-2 border-solid border-black bg-white" />
+                      <Input
+                        placeholder="Your email"
+                        {...field}
+                        className="relative border-2 border-solid border-black bg-white"
+                      />
                     </div>
                   </FormControl>
                   <FormMessage />
@@ -120,14 +128,21 @@ export default function ContactForm() {
                   <FormControl>
                     <div className="relative">
                       <div className="absolute inset-0 bg-black translate-x-1 translate-y-1 rounded-md" />
-                      <Textarea placeholder="Your message" {...field} className="relative border-2 border-solid border-black bg-white" />
+                      <Textarea
+                        placeholder="Your message"
+                        {...field}
+                        className="relative border-2 border-solid border-black bg-white"
+                      />
                     </div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <Button text={isSubmitting ? "Sending..." : "Send Message"} disabled={isSubmitting} />
+            <Button
+              text={isSubmitting ? "Sending..." : "Send Message"}
+              disabled={isSubmitting}
+            />
           </form>
         </Form>
       </div>
