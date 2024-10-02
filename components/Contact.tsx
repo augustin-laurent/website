@@ -7,7 +7,7 @@ import { Github, Book, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="flex flex-row w-screen h-screen justify-center items-center gap-5 md:gap-20" id="contact">
+    <div className="flex md:flex-row flex-col w-screen h-screen justify-center items-center gap-5 md:gap-20" id="contact">
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-5 items-center text-center md:text-left">
           <h2 className="text-3xl font-bold">Reach out for more?</h2>
@@ -33,7 +33,7 @@ export default function Contact() {
           />
         </div>
       </div>
-      <div className="w-1/4">
+      <div className="md:w-1/4">
         <ContactForm />
       </div>
     </div>

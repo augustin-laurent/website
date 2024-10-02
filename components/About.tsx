@@ -5,17 +5,21 @@ import { Mail, FileUser, ArrowDown } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="flex justify-center items-center w-screen h-screen p-4" id="about">
+    <div
+      className="flex justify-center items-center w-full min-h-screen p-4 order-1 md:order-none"
+      id="about"
+    >
       <div className="flex flex-col md:flex-row justify-center items-center max-w-7xl w-full">
         <div className="text-center md:text-left md:w-1/2 mb-12 md:mb-0 md:pr-12">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             Hello, I&apos;m Augustin !
           </h1>
-          <p className="text-lg md:text-xl mb-8">
+          <p className="text-base sm:text-lg md:text-xl mb-8">
             I&apos;m a student in Artificial Intelligence and Big Data,
-            <br />I like to develop some applications too !
+            <br className="hidden sm:inline" />I like to develop some
+            applications too !
           </p>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-5">
+          <div className="flex flex-col md:flex-row items-center space-y-4 sm:space-y-0 md:space-x-5">
             <Button
               icon={Mail}
               iconPosition="left"
@@ -36,7 +40,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-center items-center md:pl-12">
+        <div className="md:w-1/2 w-full sm:w-2/3 flex justify-center items-center md:pl-12 mt-12 md:mt-0">
           <Image
             src="/coffee.png"
             width={500}

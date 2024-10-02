@@ -2,17 +2,14 @@ import Card from "@/components/Card";
 
 export default function Projects() {
   return (
-    <div
-      className="flex flex-col w-screen h-screen justify-center items-center"
-      id="projects"
-    >
-      <div className="flex flex-col justify-center items-center py-5 space-y-5">
-        <h2 className="text-6xl font-bold ">My projects</h2>
-        <p className="text-lg md:text-xl">
-          These are some of the projects I developped during my free time.
+    <div className="container mx-auto px-4 py-16 md:py-24" id="projects">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-6xl font-bold mb-4">My projects</h2>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto">
+          These are some of the projects I developed during my free time.
         </p>
       </div>
-      <div className="flex flex-row  justify-center items-center space-x-5">
+      <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-8">
         <Card
           imageURL="/pydesk.webp"
           imageDescription="pyCleanDesk Project Image"
