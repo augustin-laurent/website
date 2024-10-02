@@ -26,7 +26,7 @@ export default function About() {
               icon={FileUser}
               iconPosition="left"
               text="See my resume"
-              href="/experiences"
+              href="/Resume.pdf"
             />
             <Button
               icon={ArrowDown}
