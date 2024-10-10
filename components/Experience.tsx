@@ -8,7 +8,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import Button from "@/components/Button";
+import Company from "@/components/Company";
 
 export interface ExperienceProps {
   id: number;
@@ -26,10 +26,10 @@ interface TimelineItemProps {
 const Experience: React.FC<TimelineItemProps> = ({ experience, isLeft }) => {
   return (
     <div className={`flex items-center ${isLeft ? "flex-row-reverse" : ""} mb-8`}>
-      <div className={`w-5/12 ${isLeft ? "text-right" : ""}`}>
+      <div className={`${isLeft ? "text-right" : ""}`}>
         <Dialog>
           <DialogTrigger asChild={true}>
-            <Button text={experience.title} />
+            <Company title={experience.title} />
           </DialogTrigger>
           <DialogContent className="border-2 border-solid border-black">
             <DialogHeader>

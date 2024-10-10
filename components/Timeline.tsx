@@ -53,7 +53,7 @@ export default function Timeline() {
             </Link>
           </p>
         </div>
-        <div className="relative mt-10">
+        <div className="relative pt-10">
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-300" />
           {experiences.map((experience, index) => (
             <Experience
